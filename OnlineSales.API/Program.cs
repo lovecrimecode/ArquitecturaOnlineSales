@@ -1,3 +1,5 @@
+using OnlineSales.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDbContext<SalesDbContext>(options =>
+        options.UseSqlite("Data Source=online_sales.db"));
+
+    services.AddScoped<ProductService>();
+    services.AddControllers();
+}
 
 var app = builder.Build();
 
