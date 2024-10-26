@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineSales.Domain\OnlineSales.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

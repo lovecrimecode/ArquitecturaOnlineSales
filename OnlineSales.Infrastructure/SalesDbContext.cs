@@ -6,10 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using OnlineSales.Domain;
 
-
 namespace OnlineSales.Infrastructure
 {
-
     public class SalesDbContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
@@ -17,5 +15,11 @@ namespace OnlineSales.Infrastructure
         public DbSet<Order> Orders { get; set; }
 
         public SalesDbContext(DbContextOptions<SalesDbContext> options) : base(options) { }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Aquí puedes configurar restricciones adicionales, índices, relaciones, etc.
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

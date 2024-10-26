@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.Sqlite;
 using OnlineSales.Domain;
 
 public class SalesDbContext : DbContext
@@ -11,7 +12,7 @@ public class SalesDbContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlite("Data Source=online_sales.db");
+            object _context = optionsBuilder.UseSqlite("Data Source=online_sales.db");
         }
     }
 }

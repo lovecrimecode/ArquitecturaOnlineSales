@@ -1,4 +1,13 @@
+using Microsoft.Extensions.Configuration;
 using OnlineSales.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using OnlineSales.Domain;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.Data.Sqlite;
+using System.Configuration;
+;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +21,10 @@ builder.Services.AddSwaggerGen();
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddDbContext<SalesDbContext>(options =>
-        options.UseSqlite("Data Source=online_sales.db"));
+    options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+    //options.UseSqlite("Data Source=online_sales.db"));
 
-    services.AddScoped<ProductService>();
+    services.AddScoped<Product>();
     services.AddControllers();
 }
 

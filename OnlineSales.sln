@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSales.Domain", "OnlineSales.Domain\OnlineSales.Domain.csproj", "{8AEB3790-1FD7-45D1-BBE4-4EDB2CD9A7D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineSales.Domain", "OnlineSales.Domain\OnlineSales.Domain.csproj", "{8AEB3790-1FD7-45D1-BBE4-4EDB2CD9A7D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSales.Infrastructure", "OnlineSales.Infrastructure\OnlineSales.Infrastructure.csproj", "{749CCDAB-9F8B-4217-8B54-5D8B04648293}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineSales.Infrastructure", "OnlineSales.Infrastructure\OnlineSales.Infrastructure.csproj", "{749CCDAB-9F8B-4217-8B54-5D8B04648293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSales.Application", "OnlineSales.Application\OnlineSales.Application.csproj", "{A6DEC4BC-7BA4-4729-B718-06783C07422A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineSales.Application", "OnlineSales.Application\OnlineSales.Application.csproj", "{A6DEC4BC-7BA4-4729-B718-06783C07422A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSales.Web", "OnlineSales.Web\OnlineSales.Web.csproj", "{69BDC971-8A35-471C-8230-573809BDDBAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineSales.Web", "OnlineSales.Web\OnlineSales.Web.csproj", "{69BDC971-8A35-471C-8230-573809BDDBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSales.API", "OnlineSales.API\OnlineSales.API.csproj", "{30903FBC-1CFA-422E-9081-A0DF5B96A6C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineSales.API", "OnlineSales.API\OnlineSales.API.csproj", "{30903FBC-1CFA-422E-9081-A0DF5B96A6C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
