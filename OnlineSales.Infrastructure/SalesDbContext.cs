@@ -21,5 +21,14 @@ namespace OnlineSales.Infrastructure
             // Aquí puedes configurar restricciones adicionales, índices, relaciones, etc.
             base.OnModelCreating(modelBuilder);
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                // Si no está configurado, aplica la base de datos SQLite por defecto.
+                optionsBuilder.UseSqlite("Data Source=online_sales.db");
+            }
+        }
+
     }
 }
